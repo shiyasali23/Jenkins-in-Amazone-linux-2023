@@ -7,6 +7,7 @@ sudo dnf update -y
 sudo dnf install java-17-amazon-corretto -y
 
 # Create Jenkins directory
+sudo useradd -r -m -d /var/lib/jenkins -s /bin/bash jenkins
 sudo mkdir /opt/jenkins
 sudo chown -R jenkins:jenkins /opt/jenkins
 sudo chmod -R 755 /opt/jenkins
